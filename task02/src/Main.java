@@ -16,7 +16,7 @@ public class Main {
       }
       String[] inputList = input.split(" ");
       if(inputList.length<3){
-        System.out.println("Format: <Number> <Space> <Operator> <Space> <Number>");
+        System.out.println("Format: <Number> <Space> <Operator> <Space> <Number>, use $last to access previous result.");
         continue;
       }
       String operation = inputList[1];
