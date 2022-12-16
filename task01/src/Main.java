@@ -58,12 +58,10 @@ public class Main {
             templateLineText[j] = templateLineText[j].replace(String.format("<<%s>>", headerMatch),matchValue);
           }
         }
-        // System.out.println(Arrays.toString(templateLineText));
        
 
         String letterLine = String.join(" ", templateLineText);
-        // System.out.println("letterline:"+letterLine);
-        if(letterLine.contains("\\n"))System.out.println(true);
+        
         letterLine = letterLine.replace("\\n", "\n");
         letter.add(letterLine);
         
