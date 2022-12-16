@@ -15,6 +15,8 @@ public class Main {
 
   public static void main(String[] args) throws IOException {
 
+    if(args.length<2) System.out.println("Error! Usage: <program> <csv_file> <txt_file>");
+
     String csvString = args[0];
     String templateFileString = args[1];
 
@@ -68,6 +70,7 @@ public class Main {
       }
       String fullLetter = String.join("\n",letter);
       System.out.println(fullLetter);
+      System.out.println("===============");
       }
       
       
